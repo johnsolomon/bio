@@ -26,6 +26,37 @@
       padding: 10px;
     }
   </style>
+  <!-- Add this in the head section of your HTML -->
+<style>
+  .experience-entry {
+    display: none;
+  }
+  .experience-heading:hover, .experience-heading:focus {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
+<script>
+  function toggleExperience(id) {
+    const element = document.getElementById(id);
+    element.style.display = (element.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+<!-- Add this in the body where you want the Experiences section -->
+<section id="experience">
+  <h2>Professional Experience</h2>
+  
+  <div class="experience-heading" onclick="toggleExperience('caregiver')">
+    Caregiver at Kaiser Permanente
+  </div>
+  <div id="caregiver" class="experience-entry">
+    05/2020 - 06/2022, Baldwin Park, CA
+  </div>
+  
+  <!-- Add more experiences here following the same format -->
+
+</section>
 </head>
 <body>
 

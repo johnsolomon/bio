@@ -3,37 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Solomon</title>
+    <title>Your Name - Medical Professional</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <img src="profile-image.jpg" alt="Profile Picture">
-        <h1>John H. Solomon</h1>
-        <p>Position at Company</p>
+        <img src="profile-image.jpg" alt="Your Profile Picture">
+        <h1>Your Name</h1>
+        <p>Your Position or Specialty</p>
     </header>
-    <section class="about">
-        <h2>About</h2>
-        <p>Short biography or description about John H. Solomon.</p>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your bio or brief introduction.</p>
     </section>
-    <section class="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Job Title</h3>
-            <p>Company Name</p>
-            <p>Job Duration</p>
-            <p>Job Description</p>
-        </div>
-        <!-- Add more .job divs for more experience listings -->
-    </section>
-    <section class="education">
+
+    <section id="education">
         <h2>Education</h2>
-        <div class="school">
-            <h3>School Name</h3>
-            <p>Degree Earned</p>
-            <p>Duration</p>
-        </div>
-        <!-- Add more .school divs for more education listings -->
+        <!-- List your degrees and institutions here -->
     </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <!-- List your professional experiences here -->
+    </section>
+
+    <section id="research">
+        <h2>Research & Projects</h2>
+        <!-- Showcase your research and projects -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Your Name</p>
+    </footer>
 </body>
 </html>
